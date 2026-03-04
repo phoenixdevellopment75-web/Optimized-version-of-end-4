@@ -159,7 +159,7 @@ Singleton {
 
     Timer {
         running: !root.gpsActive
-        repeat: true
+        repeat: false
         interval: root.fetchInterval
         triggeredOnStart: !root.gpsActive
         onTriggered: root.getData()
